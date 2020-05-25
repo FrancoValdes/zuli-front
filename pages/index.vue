@@ -1,19 +1,48 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
+    <Header />
     <Jumbotron />
+    <section>
+      <Card
+        v-for="(item, index) in items"
+        :key="index"
+        :image="item.image"
+        :name="item.name"
+        :description="item.description"
+      />
+    </section>
   </div>
 </template>
 
 <script>
-import Jumbotron from '~/components/Jumbotron.vue'
+import Jumbotron from '~/components/Jumbotron'
+import Header from '~/components/Header'
+import Card from '~/components/Card'
 
 export default {
   components: {
-    Jumbotron
+    Jumbotron,
+    Header,
+    Card
   },
   data() {
     return {
-      items: [0, 1, 2, 3, 4]
+      items: [
+        {
+          name: 'Collar lapizlázuli one',
+          description:
+            'Hecho de acero quirurjico y lapizulázuli pulido con tratamiento de brillo, 24 gramos',
+          image: '',
+          to: ''
+        },
+        {
+          name: 'Elefante de cuarso',
+          description:
+            'Figura de elefante en piedra tallada. Amuleto, Cuarzo rosa, 1. 300 gramos',
+          image: '',
+          to: ''
+        }
+      ]
     }
   }
 }

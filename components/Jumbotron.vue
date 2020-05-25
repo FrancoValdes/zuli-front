@@ -4,6 +4,7 @@
       bg-variant="light"
       text-variant="primary"
       border-variant="black"
+      header-level="3"
     >
       <template v-slot:header>{{ title }}</template>
 
@@ -22,7 +23,7 @@ export default {
   name: 'Jumbotron',
   data() {
     return {
-      title: 'Imperio Lapizlazuli',
+      title: 'Imperio Lapizlázuli',
       subtitle: 'Artesanias y Joyeria '
     }
   }
