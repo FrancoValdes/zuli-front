@@ -2,13 +2,16 @@
   <div class="container-fluid">
     <Header />
     <Jumbotron />
-    <section>
+    <section
+      class="d-flex justify-content-around flex-wrap col-md-12 col-sm-12"
+    >
       <Card
         v-for="(item, index) in items"
         :key="index"
         :image="item.image"
         :name="item.name"
         :description="item.description"
+        class="mt-3 col-12 col-sm-6 col-md-4 col-lg-3"
       />
     </section>
   </div>
@@ -32,14 +35,44 @@ export default {
           name: 'Collar lapizlázuli one',
           description:
             'Hecho de acero quirurjico y lapizulázuli pulido con tratamiento de brillo, 24 gramos',
-          image: '',
+          image: 'https://imperio-lapislazuli.s3.amazonaws.com/items/lapiz.jpg',
           to: ''
         },
         {
           name: 'Elefante de cuarso',
           description:
             'Figura de elefante en piedra tallada. Amuleto, Cuarzo rosa, 1. 300 gramos',
-          image: '',
+          image:
+            'https://imperio-lapislazuli.s3.amazonaws.com/items/elephan.jpg',
+          to: ''
+        },
+        {
+          name: 'Collar lapizlázuli one',
+          description:
+            'Hecho de acero quirurjico y lapizulázuli pulido con tratamiento de brillo, 24 gramos',
+          image: 'https://imperio-lapislazuli.s3.amazonaws.com/items/lapiz.jpg',
+          to: ''
+        },
+        {
+          name: 'Collar lapizlázuli one',
+          description:
+            'Hecho de acero quirurjico y lapizulázuli pulido con tratamiento de brillo, 24 gramos',
+          image: 'https://imperio-lapislazuli.s3.amazonaws.com/items/lapiz.jpg',
+          to: ''
+        },
+        {
+          name: 'Elefante de cuarso',
+          description:
+            'Figura de elefante en piedra tallada. Amuleto, Cuarzo rosa, 1. 300 gramos',
+          image:
+            'https://imperio-lapislazuli.s3.amazonaws.com/items/elephan.jpg',
+          to: ''
+        },
+        {
+          name: 'Collar lapizlázuli one',
+          description:
+            'Hecho de acero quirurjico y lapizulázuli pulido con tratamiento de brillo, 24 gramos',
+          image: 'https://imperio-lapislazuli.s3.amazonaws.com/items/lapiz.jpg',
           to: ''
         }
       ]
