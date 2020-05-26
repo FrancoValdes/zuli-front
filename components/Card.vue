@@ -2,9 +2,7 @@
   <div>
     <b-card
       :title="name"
-      :img-src="
-        image ? '~/assets/' + image : 'https://picsum.photos/600/300/?image=25'
-      "
+      :img-src="image ? image : 'https://picsum.photos/600/300/?image=25'"
       img-alt="Image"
       img-top
       tag="article"
